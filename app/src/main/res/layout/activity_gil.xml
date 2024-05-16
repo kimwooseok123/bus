@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gilActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- 출발지 입력 -->
+        <EditText
+            android:id="@+id/editText_departure"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#E3E3E3"
+            android:hint="출발지"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <!-- 도착지 입력 -->
+        <EditText
+            android:id="@+id/editText_destination"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_departure"
+            android:layout_marginBottom="16dp"
+            android:background="#E3E3E3"
+            android:hint="도착지"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <!-- 검색 버튼 -->
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editText_destination"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/main_item_button"
+            android:drawableBottom="@drawable/baseline_directions_bus_black_48dp"
+            android:textColor="@color/black" />
+
+        <!-- 검색 결과 리스트뷰 -->
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_search"
+            android:layout_marginTop="16dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

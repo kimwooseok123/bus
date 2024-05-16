@@ -1,0 +1,260 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".subActivity2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:contentScrim="@color/blue200"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/menu_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                app:drawableStartCompat="@drawable/baseline_menu_open_black_48dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_background2"
+                android:gravity="start|center_vertical"
+                android:text="   정류소,버스 검색"
+                android:textSize="18sp" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#CED4DA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/background1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                app:srcCompat="@drawable/pngwing1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공지사항"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:srcCompat="@drawable/taxxi" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="16dp"
+            android:background="#CED4DA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="112dp">
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="6dp"
+                android:background="#CED4DA"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray200"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:text="하양역1 건너"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/bus2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.033"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/bus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="172dp"
+                android:text="하양시외버스터미널 건너 방면"
+                android:textColor="@color/gray500"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tv_add_favorite_bus"
+                app:layout_constraintLeft_toLeftOf="@id/bus1"
+                app:layout_constraintTop_toBottomOf="@id/bus1" />
+
+            <TextView
+                android:id="@+id/tv_add_favorite_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/activity_main_add_bus_button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="＋버스"
+                android:textColor="@color/gray600"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Separator -->
+            .
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray200" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp">
+
+
+            <TextView
+                android:id="@+id/tv_station_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:text="808 (금호방면)"
+                android:textColor="@color/blue700"
+                android:textSize="25sp"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_station_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="16dp"
+                android:text="대구"
+                android:textColor="@color/gray600"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/tv_station_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_station_name" />
+
+            <TextView
+                android:id="@+id/tv_separator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="I"
+                android:textColor="@color/gray400"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_station_number"
+                app:layout_constraintTop_toTopOf="@id/tv_station_number" />
+
+            <TextView
+                android:id="@+id/tv_next_station0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="간선버스"
+                android:textColor="@color/gray600"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_separator"
+                app:layout_constraintTop_toTopOf="@id/tv_separator" />
+
+            <ImageView
+                android:id="@+id/iv_station_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:paddingLeft="14dp"
+                android:paddingTop="24dp"
+                android:paddingRight="14dp"
+                android:paddingBottom="24dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_favorite_white_48dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/gray200"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/gray200" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
