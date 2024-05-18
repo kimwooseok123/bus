@@ -2,8 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
-    android:layout_height="wrap_content">
+    android:layout_width="410dp"
+    android:layout_height="150dp"
+    android:background="@color/gray200">
 
     <TextView
         android:id="@+id/textView"
@@ -13,29 +14,32 @@
         android:layout_marginTop="4dp"
         android:text="10분"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="28dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
+        android:background="@color/gray300"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@id/textView">
 
         <Button
             android:id="@+id/but"
-            android:layout_width="255dp"
-            android:layout_height="37dp"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
             android:layout_gravity="center"
-            android:layout_marginStart="56dp"
+            android:layout_weight="1"
             android:background="@drawable/rounded_button_background3"
             android:drawableLeft="@drawable/bluebus"
             android:gravity="start|center_vertical"
-            android:text="814"
+            android:text="                                10분"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -43,10 +47,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:drawableLeft="@drawable/baseline_directions_bus_black_48dp"
         android:text="814"
-        android:textColor="@color/black"
+        android:textColor="@color/blue600"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="118dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
