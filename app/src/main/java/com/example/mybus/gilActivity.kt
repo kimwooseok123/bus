@@ -16,6 +16,7 @@ class gilActivity : AppCompatActivity() {
             "노선 102 - 출발지: B, 도착지: C",
             "노선 103 - 출발지: C, 도착지: D",
             "노선 104 - 출발지: D, 도착지: A"
+
         )
 
         // 어댑터 생성 및 설정

@@ -27,7 +27,7 @@ class BusRouteAdapter(context: Context, resource: Int, objects: List<String>) :
 
         // 버스 노선 정보 설정 (이미지, 제목, 내용)
         // 여기서는 간단하게 이미지만 설정하고 제목과 내용은 동일한 텍스트로 설정합니다.
-        holder.imageView.setImageResource(R.drawable.road2)
+        holder.imageView.setImageResource(R.drawable.busnode4)
         holder.titleTextView.text = getItem(position)
         holder.contentTextView.text = getItem(position)
 
@@ -40,3 +40,4 @@ class BusRouteAdapter(context: Context, resource: Int, objects: List<String>) :
         lateinit var contentTextView: TextView
     }
 }
+
